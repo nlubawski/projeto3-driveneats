@@ -1,0 +1,52 @@
+
+/*---------- Barra de Navegação Topo--------*/
+nav{
+    width: 414px;
+    height: 92px;
+    background-color: #CF2B2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-titulo{
+    font-size: 44px;
+    color: #FFFFFF;
+}
+
+.nav-texto{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+/*---------- Barra de Navegação Inferior--------*/
+footer{
+    width: 414px;
+    height: 92px;
+    background-color: lightblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border-radius: 35px;
+}
+
+button p{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+}
