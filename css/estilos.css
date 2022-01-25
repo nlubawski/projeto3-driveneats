@@ -20,6 +20,26 @@ nav{
 }
 
 
+/*------------------- Main ---------------------*/
+
+.pratos{
+    margin-top: 92px;
+}
+
+.prato{
+    display: flex;
+}
+.prato__escolha{
+    width: 172px;
+    height: 216px;
+    
+
+}
+
+.prato__escolha img{
+    width: 144px;
+    height: 87px;
+}
 
 
 
@@ -43,6 +63,10 @@ button{
     height: 61px;
     background-color: #CBCBCB;
     border-radius: 35px;
+    border: 1px solid #CBCBCB;
+    padding: 0 70px;
+
+
 }
 
 button p{
