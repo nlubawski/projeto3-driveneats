@@ -12,16 +12,20 @@ nav{
 .nav-titulo{
     font-size: 44px;
     color: #FFFFFF;
+    font-family: 'Righteous', cursive;
 }
 
 .nav-texto{
     font-size: 18px;
     color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 
 /*------------------- Main ---------------------*/
 
+/*---pratos---*/
 .pratos{
     margin-top: 92px;
 }
@@ -32,14 +36,50 @@ nav{
 .prato__escolha{
     width: 172px;
     height: 216px;
-    
-
 }
 
 .prato__escolha img{
     width: 144px;
     height: 87px;
 }
+
+/*---bebidas---*/
+.bebidas{
+    margin-top: 92px;
+}
+
+.bebida{
+    display: flex;
+}
+.bebida__escolha{
+    width: 172px;
+    height: 216px;
+}
+
+.bebida__escolha img{
+    width: 144px;
+    height: 87px;
+}
+
+/*---sobremesas---*/
+.sobremesas{
+    margin-top: 92px;
+}
+
+.sobremesa{
+    display: flex;
+}
+.sobremesa__escolha{
+    width: 172px;
+    height: 216px;
+}
+
+.sobremesa__escolha img{
+    width: 144px;
+    height: 87px;
+}
+
+
 
 
 
