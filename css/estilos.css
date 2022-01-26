@@ -35,8 +35,9 @@ nav{
 /*------------------- Main ---------------------*/
 
 main{
-    margin-top: 123px;
+    padding-top: 92px;
     background-color: #E5E5E5;
+    padding-bottom: 108px;
 }
 /*---pratos---*/
 .pratos{
@@ -136,8 +137,6 @@ img{
 
 .bebida{
     display: flex;
-    
-
     overflow-x: scroll;
 }
 .bebida__escolha{
