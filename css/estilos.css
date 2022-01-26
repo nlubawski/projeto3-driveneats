@@ -1,12 +1,13 @@
 
 /*---------- Barra de Navegação Topo--------*/
 nav{
-    width: 414px;
+    width: 100vw;
     height: 92px;
     background-color: #CF2B2B;
     position: fixed;
     top: 0;
     left: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .nav-titulo{
@@ -57,7 +58,6 @@ main{
 
 .prato{
     display: flex;
-    
     overflow-x: scroll;
 
 }
@@ -67,6 +67,7 @@ main{
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-right: 16px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     
 }
 
@@ -145,7 +146,7 @@ img{
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-right: 16px;
-   
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
 /*---sobremesas---*/
@@ -176,6 +177,7 @@ img{
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-right: 16px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -185,7 +187,7 @@ img{
 
 /*---------- Barra de Navegação Inferior--------*/
 footer{
-    width: 414px;
+    width: 100vw;
     height: 92px;
     background-color: lightblue;
     position: fixed;
