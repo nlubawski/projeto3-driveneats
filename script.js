@@ -1,5 +1,5 @@
 function selecionarPrato(classeSelecionada){
-    const selecionadoP = document.querySelector(".selecionado")
+    const selecionadoP = document.querySelector(".prato .selecionado")
 
     if (selecionadoP  != null){
         selecionadoP.classList.remove("selecionado")
@@ -11,7 +11,7 @@ function selecionarPrato(classeSelecionada){
 }
 
 function selecionarBebida(classeSelecionada){
-    const selecionadoB = document.querySelector(".selecionado")
+    const selecionadoB = document.querySelector(".bebida .selecionado ")
 
     if (selecionadoB  != null){
         selecionadoB.classList.remove("selecionado")
@@ -19,5 +19,17 @@ function selecionarBebida(classeSelecionada){
 
     const bebidaEscolhida = document.querySelector("." + classeSelecionada)
     bebidaEscolhida.classList.add("selecionado")
+    
+}
+
+function selecionarSobremesa(classeSelecionada){
+    const selecionadoS = document.querySelector(".sobremesa .selecionado")
+
+    if (selecionadoS  != null){
+        selecionadoS.classList.remove("selecionado")
+    }
+
+    const sobremesaEscolhida = document.querySelector("." + classeSelecionada)
+    sobremesaEscolhida.classList.add("selecionado")
     
 }
