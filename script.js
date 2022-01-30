@@ -1,8 +1,11 @@
 let prato = null
 let bebida = null
 let sobremesa = null
+let pratoPreco = null
+let bebidaPreco = null
+let sobremesaPreco = null
 
-function selecionarPrato(classeSelecionada, nomePrato){
+function selecionarPrato(classeSelecionada, nomePrato, preco){
     const selecionadoP = document.querySelector(".prato .selecionado")
 
     if (selecionadoP  != null){
@@ -13,10 +16,11 @@ function selecionarPrato(classeSelecionada, nomePrato){
     pratoEscolhido.classList.add("selecionado")
 
     prato = nomePrato
+    pratoPreco = preco
     confimar()
 }
 
-function selecionarBebida(classeSelecionada, nomeBebida){
+function selecionarBebida(classeSelecionada, nomeBebida, preco){
     const selecionadoB = document.querySelector(".bebida .selecionado ")
 
     if (selecionadoB  != null){
@@ -27,11 +31,12 @@ function selecionarBebida(classeSelecionada, nomeBebida){
     bebidaEscolhida.classList.add("selecionado")
 
     bebida = nomeBebida
+    bebidaPreco = preco
     confimar()
     
 }
 
-function selecionarSobremesa(classeSelecionada, nomeSobremesa){
+function selecionarSobremesa(classeSelecionada, nomeSobremesa, preco){
     const selecionadoS = document.querySelector(".sobremesa .selecionado")
 
     if (selecionadoS  != null){
@@ -42,6 +47,7 @@ function selecionarSobremesa(classeSelecionada, nomeSobremesa){
     sobremesaEscolhida.classList.add("selecionado")
 
     sobremesa = nomeSobremesa
+    sobremesaPreco = preco
     confimar()
     
 }
@@ -59,4 +65,27 @@ function confimar(){
         
 }
 
+function fecharPedido(){
+    const telaConfirmacao = document.querySelector('.fundo-pedido')
+    telaConfirmacao.classList.remove('escondido')
+
+    const pratoDescricao = document.querySelector('.confirmacao__prato__descricao')
+    pratoDescricao.innerHTML = prato
+
+    const pratoValor = document.querySelector('.confirmacao__prato__preco')
+    pratoValor.innerHTML = pratoPreco
+
+    const bebidaDescricao = document.querySelector('.confirmacao__bebida__descricao')
+    bebidaDescricao.innerHTML = bebida
+
+    const bebidaValor = document.querySelector('.confirmacao__bebida__preco')
+    bebidaValor.innerHTML = bebidaPreco
+
+    const sobremesaDescricao = document.querySelector('.confirmacao__sobremesa__descricao')
+    sobremesaDescricao.innerHTML = sobremesa
+
+    const sobremesaValor = document.querySelector('.confirmacao__sobremesa__preco')
+    sobremesaValor.innerHTML = sobremesaPreco
+    
+}
 
