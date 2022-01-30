@@ -5,6 +5,7 @@ let pratoPreco = null
 let bebidaPreco = null
 let sobremesaPreco = null
 let valorTotal = null
+let preco = null
 
 function selecionarPrato(classeSelecionada, nomePrato, preco){
     const selecionadoP = document.querySelector(".prato .selecionado")
@@ -120,8 +121,7 @@ function total(){
 function pedidoConfirmado(){
     const nome = prompt("Qual seu nome? ")
     const endereco = prompt("Qual seu endereço? ")
-
-    const texto =`Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${valotTotal}\n\nNome: ${nome}\nEndereço: ${endereco}`;
+    const texto =`Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${preco}\n\nNome: ${nome}\nEndereço: ${endereco}`;
     window.open(`https://wa.me/5514996336130?text=${encodeURIComponent(texto)}`);
     
 
