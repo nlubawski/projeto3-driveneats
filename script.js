@@ -89,3 +89,14 @@ function fecharPedido(){
     
 }
 
+function cancelar(){
+
+        const botaoCancelar = document.querySelector('.fundo-pedido')
+        botaoCancelar.classList.add('escondido')
+
+
+    
+
+}
+
+

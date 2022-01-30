@@ -301,6 +301,8 @@ button p{
 }
 
 .confirmacao__prato__descricao, .confirmacao__bebida__descricao, .confirmacao__sobremesa__descricao{
+    line-height: 26px;
+    letter-spacing: 0.018em; 
 }
 
 .confirmacao__bebida{
@@ -343,6 +345,7 @@ button p{
     font-weight: bold;
     line-height: 26px;
     letter-spacing: 0.018em; 
+    border: none;
 
 }
 
@@ -358,4 +361,9 @@ button p{
     font-weight: bold;
     line-height: 26px;
     letter-spacing: 0.018em; 
+    color: white;
+    background-color: #50D074;
+    border-color: #50D074;
+    border: none;
+
 }
