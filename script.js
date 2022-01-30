@@ -1,4 +1,8 @@
-function selecionarPrato(classeSelecionada){
+let prato = null
+let bebida = null
+let sobremesa = null
+
+function selecionarPrato(classeSelecionada, nomePrato){
     const selecionadoP = document.querySelector(".prato .selecionado")
 
     if (selecionadoP  != null){
@@ -7,10 +11,12 @@ function selecionarPrato(classeSelecionada){
 
     const pratoEscolhido = document.querySelector("." + classeSelecionada)
     pratoEscolhido.classList.add("selecionado")
-    
+
+    prato = nomePrato
+    confimar()
 }
 
-function selecionarBebida(classeSelecionada){
+function selecionarBebida(classeSelecionada, nomeBebida){
     const selecionadoB = document.querySelector(".bebida .selecionado ")
 
     if (selecionadoB  != null){
@@ -19,10 +25,13 @@ function selecionarBebida(classeSelecionada){
 
     const bebidaEscolhida = document.querySelector("." + classeSelecionada)
     bebidaEscolhida.classList.add("selecionado")
+
+    bebida = nomeBebida
+    confimar()
     
 }
 
-function selecionarSobremesa(classeSelecionada){
+function selecionarSobremesa(classeSelecionada, nomeSobremesa){
     const selecionadoS = document.querySelector(".sobremesa .selecionado")
 
     if (selecionadoS  != null){
@@ -31,5 +40,23 @@ function selecionarSobremesa(classeSelecionada){
 
     const sobremesaEscolhida = document.querySelector("." + classeSelecionada)
     sobremesaEscolhida.classList.add("selecionado")
+
+    sobremesa = nomeSobremesa
+    confimar()
     
 }
+
+
+function confimar(){
+    if (prato !== null & bebida !== null & sobremesa !== null){
+        const botao = document.querySelector('.selecionar')
+        botao.classList.add('escondido')
+
+        const botaoAtivado = document.querySelector('.botao-fechar-pedido')
+        botaoAtivado.classList.remove('escondido')
+
+    }
+        
+}
+
+
