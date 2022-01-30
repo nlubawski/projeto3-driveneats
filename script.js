@@ -117,3 +117,12 @@ function total(){
 
 }
 
+function pedidoConfirmado(){
+    const nome = prompt("Qual seu nome? ")
+    const endereco = prompt("Qual seu endereço? ")
+
+    let texto =`Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${total}\n\nNome: ${nome}\nEndereço: ${endereco}`;
+    window.open(`https://wa.me/5514996336130?text=${encodeURIComponent(texto)}`);
+    
+
+}
