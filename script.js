@@ -4,6 +4,7 @@ let sobremesa = null
 let pratoPreco = null
 let bebidaPreco = null
 let sobremesaPreco = null
+let valorTotal = null
 
 function selecionarPrato(classeSelecionada, nomePrato, preco){
     const selecionadoP = document.querySelector(".prato .selecionado")
@@ -86,6 +87,13 @@ function fecharPedido(){
 
     const sobremesaValor = document.querySelector('.confirmacao__sobremesa__preco')
     sobremesaValor.innerHTML = sobremesaPreco
+
+    const confirmacaoTotal = document.querySelector('.confirmacao__total__preco')
+    const preco = total()
+
+    confirmacaoTotal.innerHTML = preco
+
+
     
 }
 
@@ -93,10 +101,19 @@ function cancelar(){
 
         const botaoCancelar = document.querySelector('.fundo-pedido')
         botaoCancelar.classList.add('escondido')
-
-
-    
-
 }
 
+function total(){
+    
+    pratoPreco = parseFloat(pratoPreco.replace(',', '.'))
+    bebidaPreco = parseFloat(bebidaPreco.replace(',', '.'))
+    sobremesaPreco = parseFloat(sobremesaPreco.replace(',', '.'))
+
+    valorTotal = pratoPreco + bebidaPreco + sobremesaPreco
+    valorTotal = valorTotal.toFixed(2)
+    valorTotal = valorTotal.replace('.', ',')
+
+    return valorTotal
+
+}
 
