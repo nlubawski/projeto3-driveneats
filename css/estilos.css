@@ -76,24 +76,7 @@ main{
     border: 3px solid green;
 }
 
-.pedido{
-    width: 100%;
-    height: 100%;
-    color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    position: absolute;
 
-}
-.pedido__confirmado{
-    width: 377px;
-    height: 353px;
-    margin-left: 19px;
-    justify-content: center;
-    align-items: center;
-    background-color: #50D074;
-    margin-bottom: 80px;
-
-}
 
 /*--- configuracoes presentes em todas sections ---*/
 img{
@@ -255,4 +238,24 @@ button p{
 
 .escondido{
     display: none;
+}
+
+/*--------------confirmar pedido--------------*/
+.fundo-pedido{
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    position: absolute;
+
+}
+.tela-confirmacao-pedido{
+    width: 377px;
+    height: 353px;
+    margin-left: 19px;
+    justify-content: center;
+    align-items: center;
+    background-color: #50D074;
+    margin-bottom: 80px;
+
 }
