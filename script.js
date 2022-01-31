@@ -9,13 +9,19 @@ let preco = null
 
 function selecionarPrato(classeSelecionada, nomePrato, preco){
     const selecionadoP = document.querySelector(".prato .selecionado")
+    const iconeP = document.querySelector(".prato .icone")
 
     if (selecionadoP  != null){
         selecionadoP.classList.remove("selecionado")
+        iconeP.classList.remove("icone")
+        iconeP.classList.add("escondido")
     }
 
     const pratoEscolhido = document.querySelector("." + classeSelecionada)
     pratoEscolhido.classList.add("selecionado")
+    const iconePescolhido = document.querySelector("." + classeSelecionada + " .icone-prato")
+    iconePescolhido.classList.add("icone")
+    iconePescolhido.classList.remove("escondido")
 
     prato = nomePrato
     pratoPreco = preco
@@ -23,14 +29,20 @@ function selecionarPrato(classeSelecionada, nomePrato, preco){
 }
 
 function selecionarBebida(classeSelecionada, nomeBebida, preco){
-    const selecionadoB = document.querySelector(".bebida .selecionado ")
+    const selecionadoB = document.querySelector(".bebida .selecionado")
+    const iconeB = document.querySelector(".bebida .icone")
 
     if (selecionadoB  != null){
         selecionadoB.classList.remove("selecionado")
+        iconeB.classList.remove("icone")
+        iconeB.classList.add("escondido")
     }
 
     const bebidaEscolhida = document.querySelector("." + classeSelecionada)
     bebidaEscolhida.classList.add("selecionado")
+    const iconeBescolhido = document.querySelector("." + classeSelecionada + " .icone-bebida")
+    iconeBescolhido.classList.add("icone")
+    iconeBescolhido.classList.remove("escondido")
 
     bebida = nomeBebida
     bebidaPreco = preco
@@ -40,13 +52,19 @@ function selecionarBebida(classeSelecionada, nomeBebida, preco){
 
 function selecionarSobremesa(classeSelecionada, nomeSobremesa, preco){
     const selecionadoS = document.querySelector(".sobremesa .selecionado")
+    const iconeS = document.querySelector(".sobremesa .icone")
 
-    if (selecionadoS  != null){
+    if (selecionadoS  != null & iconeS !== null){
         selecionadoS.classList.remove("selecionado")
+        iconeS.classList.remove("icone")
+        iconeS.classList.add("escondido")
     }
 
     const sobremesaEscolhida = document.querySelector("." + classeSelecionada)
     sobremesaEscolhida.classList.add("selecionado")
+    const iconeSescolhido = document.querySelector("." + classeSelecionada + " .icone-sobremesa" )
+    iconeSescolhido.classList.add("icone")
+    iconeSescolhido.classList.remove("escondido")
 
     sobremesa = nomeSobremesa
     sobremesaPreco = preco

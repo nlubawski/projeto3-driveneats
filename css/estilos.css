@@ -76,7 +76,7 @@ main{
 }
 /*-----classe add ou remove com js----*/
 .selecionado{
-    border: 3px solid green;
+    border: 3px solid #32B72F;
 }
 
 
@@ -124,6 +124,17 @@ img{
     margin-top: 5px;
 }
 
+.main__icone{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icone{
+    color: #32B72F ;
+    font-size: 22px;
+    margin-right: 10px;
+}
 .main__margem{
     margin-left: 19px;
 }
