@@ -110,7 +110,7 @@ function fecharPedido(){
     const confirmacaoTotal = document.querySelector('.confirmacao__total__preco')
     const preco = total()
 
-    confirmacaoTotal.innerHTML = preco
+    confirmacaoTotal.innerHTML = "R$ " + preco
 
 
     
@@ -145,4 +145,3 @@ function pedidoConfirmado(){
     
 
 }
-
