@@ -139,7 +139,8 @@ function total(){
 function pedidoConfirmado(){
     const nome = prompt("Qual seu nome? ")
     const endereco = prompt("Qual seu endereço? ")
-    const texto =`Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${preco}\n\nNome: ${nome}\nEndereço: ${endereco}`;
+    let valorFinal = (pratoPreco + bebidaPreco + sobremesaPreco).toFixed(2)
+    const texto =`Olá, gostaria de fazer o pedido:\n- Prato: ${prato}\n- Bebida: ${bebida}\n- Sobremesa: ${valorFinal}\n\nNome: ${nome}\nEndereço: ${endereco}`;
     window.open(`https://wa.me/5514996336130?text=${encodeURIComponent(texto)}`);
     
 
